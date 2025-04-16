@@ -13,7 +13,7 @@
                         <gauge:RadialLineStyle Fill="#BFD6F5" Thickness="8"/>
                     </gauge:RadialAxis.AxisLineStyle>
                     <gauge:RadialAxis.Pointers>
-                        <gauge:RangePointer Value="{Binding Source={x:Reference markerPointer}, Path=Value}"
+                        <gauge:RangePointer x:DataType="gauge:MarkerPointer" Value="{Binding Source={x:Reference markerPointer}, Path=Value}"
                                                 CornerStyle="BothCurve" Fill="#2194f3"
                                                 PointerWidth="8"/>
                         <gauge:ShapePointer x:Name="markerPointer" ShapeType="Circle"
